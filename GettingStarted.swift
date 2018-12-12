@@ -32,7 +32,17 @@ if (mayHapStr != nil) {
     // Unwrap Optional
     print(mayHapStr!)
 } else {
-    print("The declared variable is not having any value")
+    print("The declared variable mayHapStr is not having any value")
+}
+
+// Unwrapping by default
+var mayHapInt: Int!
+mayHapInt = 256
+
+if mayHapInt != nil {
+    print(mayHapInt as Int)
+} else {
+    print("The declared variable mayHapInt is not having any value")
 }
 
 
