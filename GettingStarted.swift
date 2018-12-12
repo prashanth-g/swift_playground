@@ -1,4 +1,4 @@
-// variables
+// variables d1
 /*
 Constant and variable names can’t contain whitespace characters, mathematical symbols, arrows, private-use Unicode scalar values, or line- and box-drawing characters. Nor can they begin with a number, although numbers may be included elsewhere within the name.
 */
@@ -10,3 +10,30 @@ let 你好 = "你好世界"
 let 🐱🐶 = "cat and dog"
 
 print(🐱🐶)
+
+// identifier with backticks d2
+// using reserved words
+let `class`  = "class"
+let `import`  = "import as identifiers"
+
+print(`class` + " and " + `import`)
+
+// typealias
+typealias flekci = Int
+let `Func`:flekci = 128
+
+print(`Func`)
+
+// Optionals
+var mayHapStr: String? = nil
+
+mayHapStr = "Possible String"
+if (mayHapStr != nil) {
+    // Unwrap Optional
+    print(mayHapStr!)
+} else {
+    print("The declared variable is not having any value")
+}
+
+
+
