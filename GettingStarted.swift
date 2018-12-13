@@ -45,5 +45,14 @@ if mayHapInt != nil {
     print("The declared variable mayHapInt is not having any value")
 }
 
+// d3:tuples
+var testData = ("01","02","05")
+
+print(testData.0)
+
+// key value
+var keyValuePair = (key01: "value01", key02: "value02")
+
+print(keyValuePair.key01)
 
 
