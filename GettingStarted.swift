@@ -55,4 +55,10 @@ var keyValuePair = (key01: "value01", key02: "value02")
 
 print(keyValuePair.key01)
 
+// d4:dictionaries
+
+var bookList:[Int:String] = [1:"CS", 2:"ALG", 3:"DS"]
+
+print(bookList[1]!) // print unwrapped optional
+
 
