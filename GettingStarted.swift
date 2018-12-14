@@ -61,4 +61,18 @@ var bookList:[Int:String] = [1:"CS", 2:"ALG", 3:"DS"]
 
 print(bookList[1]!) // print unwrapped optional
 
+// iterate over dictionaries
+
+for (index,keyValue) in bookList.enumerated() {
+    print(index,keyValue)
+}
+
+func returnSomeString() -> String {
+    return "data01"
+}
+
+print(returnSomeString())
+
+
+
 
