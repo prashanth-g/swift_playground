@@ -74,5 +74,14 @@ func returnSomeString() -> String {
 print(returnSomeString())
 
 
+func getTime() -> (Int, Int, Int) {
+    return (6,10,56)
+}
+
+let (hour, minute, seconds) = getTime()
+
+print(hour)
+
+
 
 
