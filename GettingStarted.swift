@@ -82,6 +82,18 @@ let (hour, minute, seconds) = getTime()
 
 print(hour)
 
+// d6:function types
+
+
+func getInt(firstArg: String, secondArg: String) -> Int {
+    return 1
+}
+
+var joinStrings: (String, String) -> Int = getInt
+
+print(joinStrings("a", "b"))
+
+
 
 
 
