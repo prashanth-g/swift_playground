@@ -93,7 +93,38 @@ var joinStrings: (String, String) -> Int = getInt
 
 print(joinStrings("a", "b"))
 
+// d7: closures
 
+let justPrint = {
+    print("Welcome to closures")
+}
+
+justPrint()
+
+let sub = {
+    (data01: Int, data02: Int) -> Int in 
+    return data02 - data01
+}
+
+print(sub(10,20))
+
+// classes
+
+class compareData {
+    var property:String
+    init(str: String) {
+        self.property = str
+    }
+}
+
+let c01 = compareData(str: "d1")
+let c02 = compareData(str: "d1")
+
+if c01.property == c02.property {
+    print("It s equal")
+} else {
+    print("It s not equal")
+}
 
 
 
