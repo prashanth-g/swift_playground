@@ -110,21 +110,61 @@ print(sub(10,20))
 
 // classes
 
-class compareData {
+class CompareData {
     var property:String
     init(str: String) {
         self.property = str
     }
 }
 
-let c01 = compareData(str: "d1")
-let c02 = compareData(str: "d1")
+let c01 = CompareData(str: "d1")
+let c02 = CompareData(str: "d1")
 
 if c01.property == c02.property {
     print("It s equal")
 } else {
     print("It s not equal")
 }
+
+// d8: Type Methods
+
+class Math {
+    class func square(number: Int) -> Int {
+       return number * number
+    }
+}
+
+
+struct Absno {
+    static func square(number: Int) -> Int {
+        return number * number
+    }
+}
+
+let no = Math.square(number: 5)
+let num = Absno.square(number: 125)
+
+print(no)
+print(num)
+
+// subscripts
+
+struct City {
+    var places = ["SJ", "LA", "SFO"]
+    
+    subscript(index: Int) -> String {
+        get {
+            return places[index]
+        }
+        set(passedCity) {
+            self.places[index] = passedCity
+        }
+    }
+}
+
+let city = City()
+print(city[0])
+
 
 
 
